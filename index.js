@@ -1,8 +1,3 @@
-
-
-{/* <Todo text="learn js"/> */}
-
-//ViewModel
 var Todos = [
   new Todo("Learn JS"),
   new Todo("Learn CSS"),
@@ -93,26 +88,6 @@ function filterBuilder(option) {
 var todoFilter = document.querySelector("#todoFilter");
 todoFilter.addEventListener("change", function () {
   renderAll(Todos.filter(filterBuilder(this.value)));
-
-  //   var filter = this.value;
-  //   switch (filter) {
-  //     case "completed":
-  //       renderAll(
-  //         Todos.filter(function (todo) {
-  //           return todo.isComplete;
-  //         })
-  //       );
-  //       break;
-  //     case "uncompleted":
-  //       renderAll(
-  //         Todos.filter(function (todo) {
-  //           return !todo.isComplete;
-  //         })
-  //       );
-  //       break;
-  //     default:
-  //       renderAll();
-  //   }
 });
 
 // setTimeout(function () {
